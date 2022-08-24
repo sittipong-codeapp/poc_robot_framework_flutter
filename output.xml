@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20220824 18:58:32.156" rpa="false" schemaversion="3">
+<suite id="s1" name="My Flutter App Android" source="/Users/sittipong/Playground/robotframework/poc_robot_framework_flutter/my_flutter_app_android.robot">
+<test id="s1-t1" name="Tap increment button twice, the counter value should be 2." line="14">
+<kw name="Open Test Application">
+<kw name="Open Application" library="AppiumFlutterLibrary">
+<arg>http://127.0.0.1:4723</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>platformVersion=${ANDROID_PLATFORM_VERSION}</arg>
+<arg>app=${ANDROID_APP}</arg>
+<arg>appPackage=com.example.my_flutter_app</arg>
+<arg>appActivity=.MainActivity</arg>
+<arg>retryBackoffTime=500</arg>
+<arg>deviceName=${DEVICE_ID}</arg>
+<arg>udid=${DEVICE_ID}</arg>
+<doc>Opens a new application to given Appium server.</doc>
+<status status="PASS" starttime="20220824 18:58:32.255" endtime="20220824 18:58:43.372"/>
+</kw>
+<status status="PASS" starttime="20220824 18:58:32.254" endtime="20220824 18:58:43.373"/>
+</kw>
+<kw name="Tap Increment Button">
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>increment</arg>
+<doc>Tap the specified element.</doc>
+<msg timestamp="20220824 18:58:43.374" level="INFO">Clicking on element increment</msg>
+<status status="PASS" starttime="20220824 18:58:43.373" endtime="20220824 18:58:43.514"/>
+</kw>
+<status status="PASS" starttime="20220824 18:58:43.373" endtime="20220824 18:58:43.514"/>
+</kw>
+<kw name="Tap Increment Button">
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>increment</arg>
+<doc>Tap the specified element.</doc>
+<msg timestamp="20220824 18:58:43.516" level="INFO">Clicking on element increment</msg>
+<status status="PASS" starttime="20220824 18:58:43.515" endtime="20220824 18:58:43.737"/>
+</kw>
+<status status="PASS" starttime="20220824 18:58:43.514" endtime="20220824 18:58:43.737"/>
+</kw>
+<kw name="Element Text Should Be" library="AppiumFlutterLibrary">
+<arg>counter</arg>
+<arg>2</arg>
+<doc>Verify if the element text is equal to provided text.</doc>
+<status status="PASS" starttime="20220824 18:58:43.737" endtime="20220824 18:58:43.962"/>
+</kw>
+<kw name="Close Application" library="AppiumFlutterLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220824 18:58:43.963" endtime="20220824 18:58:44.205"/>
+</kw>
+<status status="PASS" starttime="20220824 18:58:32.254" endtime="20220824 18:58:44.205"/>
+</test>
+<doc>Simple example using AppiumLibrary</doc>
+<status status="PASS" starttime="20220824 18:58:32.158" endtime="20220824 18:58:44.206"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="My Flutter App Android">My Flutter App Android</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
